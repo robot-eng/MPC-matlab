@@ -11,6 +11,8 @@
 <p>The outputs of the model, which are also the model states, are:</p>
 
 ![alt text](/image/image-2.png)
+
+- [File Gain-Scheduled MPC Control of Nonlinear Chemical Reactor](<Gain-Scheduled MPC Control of Nonlinear Chemical Reactor.mlx>)
 ## Format Text in the Live Editor (file.mlx)
 ### **Insert Text Items**
 <p>To insert a new item, go to the Insert tab and select from the available options.</p>
