@@ -1,4 +1,16 @@
 # MPC-matlab
+## Gain-Scheduled MPC Control of Nonlinear Chemical Reactor
+**About the Continuous Stirred Tank Reactor**
+<p>A continuously stirred tank reactor (CSTR) is a common chemical system in the process industry. A schematic of the CSTR system is:</p>
+
+![alt text](/image/image.png)
+<p>This system is a jacketed non-adiabatic tank reactor described extensively in [1]. The vessel is assumed to be perfectly mixed, and a single first-order exothermic and irreversible reaction, A --> B, takes place. The inlet stream of reagent A is fed to the tank at a constant volumetric rate. The product stream exits continuously at the same volumetric rate, and liquid density is constant. Thus, the volume of reacting liquid is constant.</p>
+<p>The inputs of the CSTR model are:</p>
+
+![alt text](/image/image-1.png)
+<p>The outputs of the model, which are also the model states, are:</p>
+
+![alt text](/image/image-2.png)
 ### - Format Text in the Live Editor (file.mlx)
 #### $\color{orange}{Insert \space Text \space Items}$
 <p>To insert a new item, go to the Insert tab and select from the available options.</p>
