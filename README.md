@@ -11,8 +11,8 @@
 <p>The outputs of the model, which are also the model states, are:</p>
 
 ![alt text](/image/image-2.png)
-### - Format Text in the Live Editor (file.mlx)
-#### $\color{orange}{Insert \space Text \space Items}$
+## Format Text in the Live Editor (file.mlx)
+### **Insert Text Items**
 <p>To insert a new item, go to the Insert tab and select from the available options.</p>
 
 | **Option** | **Description** | **Additional Details** |
@@ -27,7 +27,7 @@
 |Hyperlink    |    Insert a hyperlink.         |           You can insert hyperlinks only in text lines. If you insert a hyperlink into a code line, MATLAB places the hyperlink in a new text line directly under the selected code line.`Select Web page to insert a hyperlink to an external web page. Then, enter the URL of the web page.` `Select Location in existing document to insert a hyperlink to a specific location in a separate live script or live function. Enter or browse for the file path and then select a location in the document preview that displays on the right.``Select Location in this document to insert a hyperlink that points to an existing location within the document. When prompted, click the desired location within the document to select it as the target. You also can use the Alt + Up Arrow and Alt + Down Arrow keyboard shortcuts. Location can be a code section, text paragraph, title, or heading. Linking to individual lines of text or code is not supported.``Select Existing file to insert a hyperlink to a file. Then, enter the file path.`         |
 |      Equation   |       	Insert an equation.      |            You insert add equations only in text lines. If you insert an equation into a code line, MATLAB places the equation in a new text line directly under the selected code line. For more information, see Insert Equations into the Live Editor. |
 
-#### $\color{orange}{Format \space Text}$
+### **Format Text**
 To format existing text, use any of the options included in the Live Editor tab Text section:
 
 |    **Format Type**    |   **Options**          |      
@@ -37,7 +37,7 @@ To format existing text, use any of the options included in the Live Editor tab 
 |    Lists    |       Numbered list, Bulleted list       |                    
 |    Standard Formatting    |        Bold, Italic, Underline, Monospaced      |  
 
-#### $\color{orange}{Autoformatting}$
+### **Autoformatting**
 
 |    **Formatting Style**    |   **Autoformatting Sequence**          | **Keyboard Shortcut**|     
 |:------:|:------------|:------------|               
