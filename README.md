@@ -13,6 +13,10 @@
 ![alt text](/image/image-2.png)
 
 - [Gain-Scheduled MPC Control of Nonlinear Chemical Reactor](</Gain-Scheduled MPC Control of Nonlinear Chemical Reactor/Gain-Scheduled MPC Control of Nonlinear Chemical Reactor.pdf>)
+- 
+<p>References: </p>
+[1] Seborg, D. E., T. F. Edgar, and D. A. Mellichamp, Process Dynamics and Control, 2nd Edition, Wiley, 2004.
+
 ## Format Text in the Live Editor (file.mlx)
 ### **Insert Text Items**
 <p>To insert a new item, go to the Insert tab and select from the available options.</p>
