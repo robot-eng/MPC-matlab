@@ -13,7 +13,16 @@
 ![alt text](/image/image-2.png)
 
 - [Gain-Scheduled MPC Control of Nonlinear Chemical Reactor](</Gain-Scheduled MPC Control of Nonlinear Chemical Reactor/Gain-Scheduled MPC Control of Nonlinear Chemical Reactor.pdf>)
-- 
+1. MPC single sim(mpc_mdl,10) / T=10
+   
+<p align="center"><img width="50%" src="/image/10.png"></p>
+
+2. MPC single sim(mpc_mdl,60) / T= 60
+<p align="center"><img width="50%" src="/image/60.png"></p>
+
+3. MPC Multiple sim(mmpc_mdl), T=60
+
+<p align="center"><img width="50%" src="/image/MMPC.png"></p>
 <p>References: </p>
 [1] Seborg, D. E., T. F. Edgar, and D. A. Mellichamp, Process Dynamics and Control, 2nd Edition, Wiley, 2004.
 
