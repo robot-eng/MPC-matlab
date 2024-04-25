@@ -2,22 +2,59 @@
 ## Basic Models
 - tf	- Transfer function model
 - zpk	- Zero-pole-gain model
+
+![alt text](image/Zm.png)
+```MATLAB
+zeros = 0;
+poles = [1-1i 1+1i 2];
+gain = -2;
+sys = zpk(zeros,poles,gain)
+```
+```MATLAB
+%output
+sys =
+          -2 s
+  --------------------
+  (s-2) (s^2 - 2s + 2)
+
+```
+For this example, consider the following SISO discrete-time zero-pole-gain model with 0.1s sample time:
+
+![alt text](image/Zim.png)
+```MATLAB
+zeros = [1 2 3];
+poles = [6 5 4];
+gain = 7;
+ts = 0.1;
+sys = zpk(zeros,poles,gain,ts)
+```
+```MATLAB
+%output
+sys =
+ 
+  7 (z-1) (z-2) (z-3)
+  -------------------
+   (z-6) (z-5) (z-4)
+ 
+Sample time: 0.1 seconds
+Discrete-time zero/pole/gain model.  
+```
 - ss	- State-space model
 - frd	- Frequency-response data model
 - filt	- Specify discrete transfer functions in DSP format
 - dss	- Create descriptor state-space models
+
 ## Gain-Scheduled MPC Control of Nonlinear Chemical Reactor
 **About the Continuous Stirred Tank Reactor**
 <p>A continuously stirred tank reactor (CSTR) is a common chemical system in the process industry. A schematic of the CSTR system is:</p>
 
 <p align="center"><img width="50%" src="/image/image.png"></p>
 <p>This system is a jacketed non-adiabatic tank reactor described extensively in [1]. The vessel is assumed to be perfectly mixed, and a single first-order exothermic and irreversible reaction, A --> B, takes place. The inlet stream of reagent A is fed to the tank at a constant volumetric rate. The product stream exits continuously at the same volumetric rate, and liquid density is constant. Thus, the volume of reacting liquid is constant.</p>
-<p>The inputs of the CSTR model are:</p>
 
-![alt text](/image/image-1.png)
-<p>The outputs of the model, which are also the model states, are:</p>
-
-![alt text](/image/image-2.png)
+| The inputs of the CSTR model are:         | The outputs of the model, which are also the model states, are:    |    
+| ----------------------------------------  | ------------------------------------------------------------------ |
+|                                           |                                                                    |
+| ![alt text](/image/image-1.png)           | ![alt text](/image/image-2.png)                                                                   |
 
 - [Gain-Scheduled MPC Control of Nonlinear Chemical Reactor](</Gain-Scheduled MPC Control of Nonlinear Chemical Reactor/Gain-Scheduled MPC Control of Nonlinear Chemical Reactor.pdf>)
 1. MPC single sim(mpc_mdl,10) / T=10
