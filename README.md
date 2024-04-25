@@ -1,49 +1,15 @@
 # MPC-matlab
-## Basic Models
-- tf	- Transfer function model
-- zpk	- Zero-pole-gain model
-
-![alt text](image/Zm.png)
-```MATLAB
-zeros = 0;
-poles = [1-1i 1+1i 2];
-gain = -2;
-sys = zpk(zeros,poles,gain)
-```
-```MATLAB
-%output
-sys =
-          -2 s
-  --------------------
-  (s-2) (s^2 - 2s + 2)
-
-```
-For this example, consider the following SISO discrete-time zero-pole-gain model with 0.1s sample time:
-
-![alt text](image/Zim.png)
-```MATLAB
-zeros = [1 2 3];
-poles = [6 5 4];
-gain = 7;
-ts = 0.1;
-sys = zpk(zeros,poles,gain,ts)
-```
-```MATLAB
-%output
-sys =
- 
-  7 (z-1) (z-2) (z-3)
-  -------------------
-   (z-6) (z-5) (z-4)
- 
-Sample time: 0.1 seconds
-Discrete-time zero/pole/gain model.  
-```
-- ss	- State-space model
-- frd	- Frequency-response data model
-- filt	- Specify discrete transfer functions in DSP format
-- dss	- Create descriptor state-space models
-
+## Funtion model
+### Basic Models
+- [tf](https://www.mathworks.com/help/control/ref/tf.html) - Transfer function model
+- [zpk](https://www.mathworks.com/help/control/ref/zpk.html) - Zero-pole-gain model
+- [ss](https://www.mathworks.com/help/control/ref/ss.html)	- State-space model
+- [frd](https://www.mathworks.com/help/control/ref/frd.html)	- Frequency-response data model
+- [filt](https://www.mathworks.com/help/control/ref/filt.html)	- Specify discrete transfer functions in DSP format
+- [dss](https://www.mathworks.com/help/control/ref/dss.html)	- Create descriptor state-space models
+### Generate Random Models
+ - [rss](https://www.mathworks.com/help/control/ref/rss.html)	- Generate random continuous test model
+ - [drss](https://www.mathworks.com/help/control/ref/drss.html)	- Generate random discrete test model
 ## Gain-Scheduled MPC Control of Nonlinear Chemical Reactor
 **About the Continuous Stirred Tank Reactor**
 <p>A continuously stirred tank reactor (CSTR) is a common chemical system in the process industry. A schematic of the CSTR system is:</p>
